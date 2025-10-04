@@ -1,0 +1,25 @@
+body{
+  text-align: center;
+  /* justify-content: space-around; */
+  background-image: url("https://img.freepik.com/premium-photo/3d-rendering-cricket-player-characters-different-poses-green-purple-stadium-background_1302-28246.jpg?semt=ais_hybrid&w=740&q=80");
+  background-attachment: fixed;
+  background-repeat: unset;
+  background-size: 100%;
+}
+.image{
+  height: 75px;
+}
+.BUTTONS{
+  height: 100PX;
+  width: 100PX;
+  border: none;
+  border-radius: 25px;
+  margin: 10px;
+  cursor: pointer;
+}
+.imageofscore{
+  height: 50px;
+}
+.title{
+  width: 200px;
+}
