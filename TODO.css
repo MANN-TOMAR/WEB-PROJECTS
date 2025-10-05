@@ -1,15 +1,50 @@
 body{
+  height: 100%;
+  width: 100%;
   background-image: url(https://getwallpapers.com/wallpaper/full/c/3/c/1297750-amazing-scenery-wallpaper-1920x1080-for-ios.jpg);
   background-repeat: no-repeat;
   background-size:cover;background-attachment: fixed;
-  display: grid;
-  place-items: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 105px;
 }
+body div{
+  width: 90%;
+  height: calc(95% - 50px);
+}
+body footer{
+  width: 90%;
+}
+@media (max-width:600px) {
+  body{
+    background-image: url(https://w0.peakpx.com/wallpaper/976/501/HD-wallpaper-scenery-beautiful-view-cabin-lake-mountain-nature-old-wooden-path.jpg);
+  }
+  #main-heading{
+    font-size: x-large;
+  }
+  #add{
+    display: flex;
+    flex-direction: column;
+  }
+  #add-button{
+    width: 100%;
+    height: 43.5vh;
+  }
+  .input{
+    margin-bottom: 10px;
+  }
+  footer{
+    height: 110px;
+  }
+}
 #main-heading{
+  text-align: center;
   align-items: center;
+  width: 100%;
+  height: 50px;
   text-decoration: double;
 }
 .input{
@@ -20,6 +55,7 @@ body{
   border-style: double;
   border-color: black;
   padding: 10px 5px;
+  width: 35%;
 }
 input::placeholder{
   color: black;
@@ -27,26 +63,28 @@ input::placeholder{
 #add-button{
   text-align: center;
   font-size: medium;
-  /* height: 35px; */
-  /* width: 70px; */
   border-radius: 10px;
   background-color: green;
   color: white;
   border-style: double;
   border-color: black;
   cursor: pointer;
+  width: 18%;
+  height: 35px;
 }
 .addcontainer{
-  display: grid;
-  grid-template-columns: 200px 200px 100px;
-  column-gap: 10px;
-  row-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   margin-bottom: 10px;
 } 
+
 .delete{
-  padding: 10px 5px;
+  width: 18%;
+  height: 4.5vw;
   text-align: center;
-  height: 40px;
+  height: 35px;
   font-size: medium;
   border-radius: 10px;
   background-color: rgb(139, 15, 15);
@@ -56,6 +94,7 @@ input::placeholder{
   cursor: pointer;
 }
 .outputjs{
+  width: 35%;
   text-align: center;
   font-size: larger;
   border:none;
@@ -64,6 +103,8 @@ input::placeholder{
   padding: 10px 0px;
 }
 footer{
+  text-align: center;
+  padding: 0px 1vw;
   color: white;
   background-color: rgb(13, 79, 105);
   border: 3px black solid;
@@ -72,7 +113,25 @@ footer{
   left: 30px;
   right: 30px;
   z-index: 1000px;
+  height: 80px;
 }
-hr{
-  visibility: hidden;
+#information{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 5px 0px;
+}
+p{
+  text-align: center;
+}
+#show-output{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  height: fit-content;
+  justify-content: space-evenly;
+  column-gap: 10px;
+  row-gap: 10px;
 }
