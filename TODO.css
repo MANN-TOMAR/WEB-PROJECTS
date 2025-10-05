@@ -20,6 +20,7 @@ body{
   border-style: double;
   border-color: black;
   padding: 10px 5px;
+  color:white;
 }
 #add-button{
   text-align: center;
@@ -59,4 +60,5 @@ body{
   border-radius: 10px;
   background-color: skyblue;
   padding: 10px 0px;
+
 }
