@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CALCULATOR</title>
+  <link rel="stylesheet" href="CALCULATOR.css">
+</head>
+<body>
+  <div id="OUTERBODY">
+    <div><h3 id="HEADING">CALCULATOR</h3></div>
+    <input type="text" id="output">
+    <!-- <div id="output"></div> -->
+    <section id="butoons">
+      <div class="inputbutton" onclick="expression = '';document.querySelector('#output').value = expression;">C
+      </div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '1';document.querySelector('#output').value = expression;">1</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '2';document.querySelector('#output').value = expression; ">2</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '+';document.querySelector('#output').value = expression; ">+</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '3';document.querySelector('#output').value = expression; ">3</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '4';document.querySelector('#output').value = expression; ">4</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '-';document.querySelector('#output').value = expression; ">-</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '5';document.querySelector('#output').value = expression; ">5</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '6';document.querySelector('#output').value = expression; ">6</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '*';document.querySelector('#output').value = expression; ">*</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '7';document.querySelector('#output').value = expression; ">7</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '8';document.querySelector('#output').value = expression; ">8</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '/' ;document.querySelector('#output').value = expression;">/</div>
+      <div class="inputbutton"
+        onclick="result = eval(document.querySelector('#output').value) ;document.querySelector('#output').value = result;">=</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '9' ;document.querySelector('#output').value = expression;">9</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '0' ;document.querySelector('#output').value= expression;">0</div>
+      <div class="inputbutton"
+        onclick="expression = expression+ '.';document.querySelector('#output').value = expression; ">.</div>
+    </section>
+  </div>
+  <script src="CALCULATOR.js">
+  </script>
+</body>
+
+</html>

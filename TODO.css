@@ -1,0 +1,62 @@
+body{
+  background-image: url(https://getwallpapers.com/wallpaper/full/c/3/c/1297750-amazing-scenery-wallpaper-1920x1080-for-ios.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;background-attachment: fixed;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#main-heading{
+  align-items: center;
+  text-decoration: double;
+}
+.input{
+  /* height: 35px; */
+  border-radius: 10px;
+  color:black;
+  font-size: 15px;
+  background-color: rgba(104, 237, 27, 0.258);
+  border-style: double;
+  border-color: black;
+  padding: 10px 5px;
+}
+#add-button{
+  text-align: center;
+  font-size: medium;
+  /* height: 35px; */
+  /* width: 70px; */
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  border-style: double;
+  border-color: black;
+  cursor: pointer;
+}
+.addcontainer{
+  display: grid;
+  grid-template-columns: 200px 200px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 10px;
+} 
+.delete{
+  padding: 10px 5px;
+  text-align: center;
+  height: 40px;
+  font-size: medium;
+  border-radius: 10px;
+  background-color: rgb(139, 15, 15);
+  color: white;
+  border-style: solid;
+  border-color: black;
+  cursor: pointer;
+}
+.outputjs{
+  text-align: center;
+  font-size: larger;
+  border:none;
+  border-radius: 10px;
+  background-color: skyblue;
+  padding: 10px 0px;
+}

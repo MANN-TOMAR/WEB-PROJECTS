@@ -1,0 +1,58 @@
+body{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  margin-top: 100px;
+
+}
+#HEADING{
+  color: white;
+}
+#OUTERBODY{
+  border: 2px solid black;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 270px;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+.inputbutton{
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid black;
+  background-color:rgb(221, 89, 42);
+  border-radius: 10px;
+
+}
+#output{
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  border-radius: 10px;
+  height: 50px;
+  align-items: center;
+  border: 5px solid black;
+}
+#butoons{
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}

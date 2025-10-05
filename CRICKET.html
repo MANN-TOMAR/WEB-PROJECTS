@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CRICKET GAME</title>
+  <link rel="stylesheet" href="CRICKET.css">
+</head>
+
+<body>
+  <h3><img src="TITLE.webp" alt="TITLE IMAGE" class="title"></h3>
+  <h1>Bat Ball Stump Game</h1>
+  <div id="buttons">
+    <button class="BUTTONS" , onclick="
+    showresult('BAT',result('BAT'));"><img src="BAT.jpeg" alt="BAT IMAGE" class="image"></button>
+    <button class="BUTTONS" , onclick="
+    showresult('BALL',result('BALL'));"><img src="BALL.jpeg" alt="BALL IMAGE" class="image"></button>
+    <button class="BUTTONS" , onclick="
+    showresult('STUMP',result('STUMP'));"><img src="STUMPS.png" alt="STUMP IMAGE" class="image"></button>
+  </div>
+
+  <br>
+  <h3 id="userchoice"></h3>
+  <h3 id="computerchoice"></h3>
+  <h3 id="result"></h3>
+  <h3 id="score"></h3>
+  <button class="BUTTONS"
+    onclick="resultbutton(),document.querySelector('#score').innerText =`SCORE: WIN: ${score.win} LOST: ${score.lost} TIE: ${score.tie}`;"><img
+      src="SCORE.webp" alt="SCORE IMAGE" class="imageofscore"></button>
+      <br>
+
+  <button class="BUTTONS" , onclick="localStorage.clear(),
+    score = {
+      win: 0,
+      lost: 0,
+      tie: 0,
+    },
+    document.querySelector('#score').innerText =``;"><img
+      src="RESET.png" alt="RESET IMAGE" class="image"></button>
+  <script src="CRICKET.js">
+  </script>
+</body>
+
+</html>
