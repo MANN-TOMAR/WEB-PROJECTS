@@ -20,7 +20,9 @@ body{
   border-style: double;
   border-color: black;
   padding: 10px 5px;
-  color:white;
+}
+input::placeholder{
+  color: black;
 }
 #add-button{
   text-align: center;
@@ -62,3 +64,4 @@ body{
   padding: 10px 0px;
 
 }
+
