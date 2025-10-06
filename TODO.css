@@ -18,6 +18,7 @@ body div{
 @media (max-width:600px) {
   body{
     background-image: url(https://w0.peakpx.com/wallpaper/976/501/HD-wallpaper-scenery-beautiful-view-cabin-lake-mountain-nature-old-wooden-path.jpg);
+    padding-bottom: 180px;
   }
   #main-heading{
     font-size: x-large;
