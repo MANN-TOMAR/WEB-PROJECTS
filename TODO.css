@@ -15,9 +15,6 @@ body div{
   width: 90%;
   height: calc(95% - 50px);
 }
-body footer{
-  width: 90%;
-}
 @media (max-width:600px) {
   body{
     background-image: url(https://w0.peakpx.com/wallpaper/976/501/HD-wallpaper-scenery-beautiful-view-cabin-lake-mountain-nature-old-wooden-path.jpg);
@@ -28,6 +25,7 @@ body footer{
   #add{
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   #add-button{
     width: 100%;
@@ -35,7 +33,20 @@ body footer{
   }
   .input{
     margin-bottom: 10px;
+    
   }
+  #show-output{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  /* footer{
+    position:fixed;
+    bottom: 5px;
+    left: 5vw;
+    right: 5vw;
+  } */
 }
 #main-heading{
   text-align: center;
@@ -78,7 +89,8 @@ input::placeholder{
 } 
 
 .delete{
-  width: 18%;
+  min-width: 50px;
+  width: 17%;
   height: 4.5vw;
   text-align: center;
   height: 35px;
@@ -89,9 +101,13 @@ input::placeholder{
   border-style: solid;
   border-color: black;
   cursor: pointer;
+  padding: 2px 10px;
+  margin-left: 20px;
 }
 .outputjs{
-  width: 35%;
+  width: 520px;;
+  /* max-width: 200px; */
+  min-width: 200px;
   text-align: center;
   font-size: larger;
   border:none;
@@ -100,17 +116,23 @@ input::placeholder{
   padding: 10px 0px;
 }
 footer{
+  width: 90%;
   text-align: center;
-  padding: 0px 1vw;
+  align-items: center;
+  /* margin: 1.2vw; */
+  text-align: center;
+  /* padding: 0px 10px; */
   color: white;
   background-color: rgb(13, 79, 105);
   border: 3px black solid;
   position: fixed;
-  bottom: 5px;
-  left: 30px;
-  right: 30px;
+  bottom: 1vw;
+  left: 1vw;
+  right: 1vw;
   z-index: 1000px;
   height: auto;
+  padding-right: 7vw;
+  /* margin-right: 10px; */
 }
 #information{
   display: flex;
@@ -123,6 +145,7 @@ p{
   text-align: center;
 }
 #show-output{
+  min-width: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -131,5 +154,50 @@ p{
   justify-content: space-evenly;
   column-gap: 10px;
   row-gap: 10px;
-
 }
+#show-output span{
+  min-width: 50px;
+}
+#show-output button{
+  min-width: 30px;
+}
+/* footer {
+  text-align: center;
+  padding: 10px 2vw;
+  color: white;
+  background-color: rgb(13, 79, 105);
+  border: 3px solid black;
+  position: fixed;
+  bottom: 5px;
+  left: 2vw;
+  right: 2vw;
+  z-index: 1000;
+  border-radius: 12px;
+  font-size: 1rem; */
+  /* line-height: 1.5;
+  height: auto;
+} */
+
+/* Adjust layout for tablets */
+/* @media (max-width: 900px) {
+  footer {
+    font-size: 0.95rem;
+    padding: 12px 3vw;
+  }
+} */
+
+/* 📱 For mobile screens
+@media (max-width: 600px) {
+  footer {
+    position: relative; /* avoids overlap with content */
+    /* bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    padding: 15px 5vw;
+    border-radius: 0;
+    line-height: 1.6;
+  }
+/* } */
