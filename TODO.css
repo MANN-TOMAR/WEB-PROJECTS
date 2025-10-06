@@ -41,12 +41,9 @@ body div{
     align-items: center;
     flex-wrap: wrap;
   }
-  /* footer{
-    position:fixed;
-    bottom: 5px;
-    left: 5vw;
-    right: 5vw;
-  } */
+  .delete{
+    width: 50px;
+  }
 }
 #main-heading{
   text-align: center;
@@ -89,7 +86,7 @@ input::placeholder{
 } 
 
 .delete{
-  min-width: 50px;
+  min-width: 80px;
   width: 17%;
   height: 4.5vw;
   text-align: center;
@@ -158,46 +155,3 @@ p{
 #show-output span{
   min-width: 50px;
 }
-#show-output button{
-  min-width: 30px;
-}
-/* footer {
-  text-align: center;
-  padding: 10px 2vw;
-  color: white;
-  background-color: rgb(13, 79, 105);
-  border: 3px solid black;
-  position: fixed;
-  bottom: 5px;
-  left: 2vw;
-  right: 2vw;
-  z-index: 1000;
-  border-radius: 12px;
-  font-size: 1rem; */
-  /* line-height: 1.5;
-  height: auto;
-} */
-
-/* Adjust layout for tablets */
-/* @media (max-width: 900px) {
-  footer {
-    font-size: 0.95rem;
-    padding: 12px 3vw;
-  }
-} */
-
-/* 📱 For mobile screens
-@media (max-width: 600px) {
-  footer {
-    position: relative; /* avoids overlap with content */
-    /* bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin-top: 15px;
-    font-size: 0.9rem;
-    padding: 15px 5vw;
-    border-radius: 0;
-    line-height: 1.6;
-  }
-/* } */
