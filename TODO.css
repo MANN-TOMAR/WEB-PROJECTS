@@ -1,9 +1,10 @@
-body{
+body {
   height: 100%;
   width: 100%;
   background-image: url(https://getwallpapers.com/wallpaper/full/c/3/c/1297750-amazing-scenery-wallpaper-1920x1080-for-ios.jpg);
   background-repeat: no-repeat;
-  background-size:cover;background-attachment: fixed;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,60 +13,56 @@ body{
   padding-bottom: 105px;
   position: relative;
 }
-body div{
+body div {
   width: 90%;
   height: calc(95% - 50px);
 }
-@media (max-width:600px) {
-
-  body{
+@media (max-width: 600px) {
+  body {
     background-image: url(https://w0.peakpx.com/wallpaper/976/501/HD-wallpaper-scenery-beautiful-view-cabin-lake-mountain-nature-old-wooden-path.jpg);
     padding-bottom: 180px;
   }
-  #main-heading{
+  #main-heading {
     font-size: x-large;
   }
-  #add{
+  #add {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #add-button{
+  #add-button {
     width: 100%;
     height: 43.5vh;
   }
-  .input{
+  .input {
     margin-bottom: 10px;
-    
   }
-  #show-output{
+  #show-output {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     min-height: 300px;
     overflow: none;
-    
-    
   }
-  footer{
+  /* footer{
     position: absolute !important;
     margin-top: 30px;
     bottom: 10px !important;
   }
-  
+   */
 }
 
-#main-heading{
+#main-heading {
   text-align: center;
   align-items: center;
   width: 100%;
   height: 50px;
   text-decoration: double;
 }
-.input{
+.input {
   border-radius: 10px;
-  color:black;
+  color: black;
   font-size: 15px;
   background-color: rgba(104, 237, 27, 0.258);
   border-style: double;
@@ -73,10 +70,10 @@ body div{
   padding: 10px 5px;
   width: 35%;
 }
-input::placeholder{
+input::placeholder {
   color: black;
 }
-#add-button{
+#add-button {
   text-align: center;
   font-size: medium;
   border-radius: 10px;
@@ -88,15 +85,15 @@ input::placeholder{
   width: 18%;
   height: 35px;
 }
-.addcontainer{
+.addcontainer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 10px;
-} 
+}
 
-.delete{
+.delete {
   min-width: 80px;
   width: 17%;
   height: 4.5vw;
@@ -114,18 +111,18 @@ input::placeholder{
   right: 28px;
   margin-left: 40px;
 }
-.outputjs{
-  width: 520px;;
+.outputjs {
+  width: 520px;
   /* max-width: 200px; */
   min-width: 200px;
   text-align: center;
   font-size: larger;
-  border:none;
+  border: none;
   border-radius: 10px;
   background-color: skyblue;
   padding: 10px 0px;
 }
-footer{
+footer {
   width: 90%;
   text-align: center;
   align-items: center;
@@ -135,26 +132,30 @@ footer{
   color: white;
   background-color: rgb(13, 79, 105);
   border: 3px black solid;
-  position:fixed;
-  bottom: 10px ;
+  /* position:fixed;1 */
+  position: absolute !important;
+  margin-top: 30px;
+  bottom: 10px !important;
+  /* bottom: 10px; */
   left: 1vw;
   right: 1vw;
   z-index: 1000px;
   height: auto;
   padding-right: 7vw;
   /* margin-right: 10px; */
+  border-radius: 15px;
 }
-#information{
+#information {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
   padding: 5px 0px;
 }
-p{
+p {
   text-align: center;
 }
-#show-output{
+#show-output {
   min-width: 100px;
   display: flex;
   flex-direction: row;
@@ -165,6 +166,6 @@ p{
   column-gap: 10px;
   row-gap: 10px;
 }
-#show-output span{
+#show-output span {
   min-width: 50px;
 }
