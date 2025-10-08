@@ -10,12 +10,14 @@ body{
   justify-content: space-evenly;
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 105px;
+  position: relative;
 }
 body div{
   width: 90%;
   height: calc(95% - 50px);
 }
 @media (max-width:600px) {
+
   body{
     background-image: url(https://w0.peakpx.com/wallpaper/976/501/HD-wallpaper-scenery-beautiful-view-cabin-lake-mountain-nature-old-wooden-path.jpg);
     padding-bottom: 180px;
@@ -41,8 +43,19 @@ body div{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    min-height: 300px;
+    overflow: none;
+    
+    
   }
+  footer{
+    position: absolute !important;
+    margin-top: 30px;
+    bottom: 10px !important;
+  }
+  
 }
+
 #main-heading{
   text-align: center;
   align-items: center;
@@ -122,8 +135,8 @@ footer{
   color: white;
   background-color: rgb(13, 79, 105);
   border: 3px black solid;
-  position: fixed;
-  bottom: 1vw;
+  position:fixed;
+  bottom: 10px ;
   left: 1vw;
   right: 1vw;
   z-index: 1000px;
