@@ -1,5 +1,5 @@
 body{
-  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230716/pngtree-realistic-3d-rendering-of-speeding-clouds-against-a-blue-sky-background-image_3870197.jpg);
+  background-color:skyblue;
   background-repeat: no-repeat;
   background-size:cover;
   background-attachment: fixed;
@@ -23,4 +23,5 @@ a{
 }
 label{
   padding: 30px 0px;
+
 }
